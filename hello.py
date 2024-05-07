@@ -1,23 +1,16 @@
-#Function to return specified string
-def hello_world():
-    return "Hello World!"
+def hello_world(): #Function to return specified string
+    return "Hello World!" #Returning the string
+result = hello_world() #Storing the returned string in a variable 
+print (result) #Printing the variable 
 
-#Storing the returned string in a variable
-result = hello_world()
-
-#Printing the variable 
-print (result)
-
-#Asking user for input N
-print("Enter your argument [integer only]")
-N = input()    
-
-#Function taking a string N and returning N repetitions of a string 
 def hello_world_n(N):
-    #Converting string N to int N and performing string multiplication
-    N = int(N)
-    new_string = "Hello World! "*N
-    print (new_string)
-    return 0;
-#Calling the function after taking input N
-hello_world_n(N)
+    N = int(N)  # Convert string N to int N
+    result_1 = "Hello World! " * N  # Perform string multiplication
+    return result_1
+
+# Ask user for input N
+N = input("Enter your argument [integer only]: ")    
+
+# Call the function after taking input N and print the result
+result_1 = hello_world_n(N)
+print(result_1)
